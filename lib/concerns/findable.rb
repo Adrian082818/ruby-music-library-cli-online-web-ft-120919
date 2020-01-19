@@ -1,6 +1,6 @@
 module Concerns::Findable 
   
-  def self.find_by_name 
-    
+  def find_by_name(name)
+  self.all.detect {||}  
   end 
 end 
