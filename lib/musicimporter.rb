@@ -7,6 +7,6 @@ class MusicImporter
   end 
   
   def files 
-    @files ||= Dir.entries
+    @files ||= Dir.entries("#{path}/*")
   end 
 end 
