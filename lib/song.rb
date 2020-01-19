@@ -60,7 +60,8 @@ class Song
 end 
 
 def self.new_from_filename(filename)
-  artist, song = filenane 
+  artist, song = filename.spli(" - ")
+  Artist.
 end 
   
   
