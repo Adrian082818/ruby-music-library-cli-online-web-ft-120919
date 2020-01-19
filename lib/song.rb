@@ -61,7 +61,7 @@ end
 
 def self.new_from_filename(filename)
    filename.gsub(".mp3", "")
-  artist, song, genre = filename.spli(" - ")
+  artist, song, genre = filename.split(" - ")
  song_artist = Artist.find_or_create_by_name(artist)
  song_genre = Genre.find_or_create_by_name(genre)
 
