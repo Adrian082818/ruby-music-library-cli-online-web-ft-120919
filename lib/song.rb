@@ -68,7 +68,7 @@ new = Song.new(song, song_artist, song_genre)
 end 
 
 def self.create_from_filename(filename)
-  
+  self.new_from_filename(filename).tap {|song| song.save}
 end 
   
   
