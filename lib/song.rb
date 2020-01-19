@@ -58,6 +58,10 @@ class Song
   #   self.create(name)
   # end 
 end 
+
+def self.new_from_filename(name)
+  
+end 
   
   
 end 
