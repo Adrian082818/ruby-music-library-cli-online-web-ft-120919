@@ -3,6 +3,7 @@ class Song
   
   attr_accessor :name 
   attr_reader :artist, :genre 
+  
   @@all = []
   
   def initialize(name, artist=nil, genre=nil)
@@ -51,7 +52,10 @@ class Song
   def self.find_or_create_by_name(name)
     # self.find_by_name(name) || self.create(name)
    song = self.find_by_name(name)
-   if 
+   if song 
+     song 
+   else 
+     self.create(name)
   end 
   
   
